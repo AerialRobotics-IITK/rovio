@@ -2,7 +2,7 @@
 <launch>
   <node pkg="rovio" type="rovio_node" name="rovio" output="screen">
   <param name="filter_config" value="$(find rovio)/cfg/rovio.info"/>
-  <param name="camera0_config" value="$(find rovio)/cfg/real_infra.yaml"/>
+  <param name="camera0_config" value="$(find rovio)/cfg/realsense_infra.yaml"/>
   <remap from="/cam0/image_raw" to="/camera/infra1/image_rect_raw"/>
   <remap from="/imu0" to="/camera/imu"/>
   <!-- <param name="camera1_config" value="$(find rovio)/cfg/euroc_cam1.yaml"/> -->
